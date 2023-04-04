@@ -1,0 +1,125 @@
+html{
+    --Blue: rgb(17, 118, 233);
+    --White: rgb(240, 234, 234);
+    --Black: rgb(19, 17, 17);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: var(--Black);
+}
+body{
+    font-size: 15px;
+    position: relative;
+    background-color: var(--White);
+}
+.App{
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 3px 7px rgb(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+.header{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--White);
+    padding: 20px 20px;
+}
+.meme-logo-div{
+    display: flex;
+}
+.logo{
+    width: 40px;
+    margin: 0 10px 0 0;
+}
+.meme-logo-div > h2{
+    margin-top: 5px;
+    color: var(--White);
+}
+.label h3{
+    color: var(--White);
+}
+.section{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+}
+.text--input-div{
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    margin: 0 0 20px 0;
+}
+.text--input-div input{
+    background-color: var(--White);
+    border: 1px solid #d5d4db;
+    height: 30px;
+    width: 240px;
+    border-radius: 10px;
+    color: grey;
+    text-indent: 5px;
+}
+.generate-btn{
+    width: 85%;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: var(--White);
+    cursor: pointer;
+    margin: 0 0 20px 0;
+}
+.meme--image-div{
+    min-height: 50vh;
+    width: 88%;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+.meme--image{
+    width: 80%;
+    min-height: 60vh;
+}
+.meme-text-top{
+    position: absolute;
+    text-transform: uppercase;
+    top: 5%;
+    color: var(--White);
+    font-size: 35px;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: var(--Black);
+}
+.meme-text-bottom{
+    position: absolute;
+    text-transform: uppercase;  
+    bottom: 5%;
+    color: var(--White);
+    font-size: 35px;
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: var(--Black);
+}
+@media all and (width <= 900px) {
+    .App{
+        width: 90%;
+    }
+    .meme--image{
+        width: 100%;
+        min-height: 50vh;
+    }
+}
+@media all and (width <= 600px) {
+    .App{
+        width: 95%;
+    }
+    .top{
+        margin-right: 15px;
+    }
+}
