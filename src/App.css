@@ -20,6 +20,7 @@ body{
     height: 100%;
     box-shadow: 0px 3px 7px rgb(0, 0, 0, 0.1);
     border-radius: 12px;
+    overflow: hidden;
   }
 .header{
     width: 100%;
@@ -46,18 +47,20 @@ body{
     color: var(--White);
 }
 .section{
-    width: auto;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 15px 10px;
+    overflow: hidden;
 }
 .text--input-div{
     display: flex;
     justify-content: space-between;
     width: 88%;
     margin: 0 0 20px 0;
+    overflow: hidden;
 }
 .text--input-div input{
     background-color: var(--White);
